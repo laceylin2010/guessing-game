@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<title>Project 1
+</title>
+<body>
+  <h1>Javascript</h1>
+  <p>Javascript is making it so users answer questions that is being asked of them. In return, depending on their answer, it gives them a message in response.</p>
+  <h2>About Me</h2>
+  <p>My name is Lacey and I have lived in seattle most of my life. I am looking forward to completing all the courses of codefellows!</p>
+
+  <script>
+var user = prompt('What is your name?');
+  console.log(user);
+  alert('Good Morning ' + user + ', Lets go grab some coffee!');
+
+var correct = 0;
+var q1 = prompt("Is my favorite color green?")
+  if(q1=='no'){
+    alert("You got this right!");
+    correct = correct + 1;
+  }
+  else{
+    alert("Oops, you got this wrong..");
+  }
+
+var q2 = prompt("Do I love Rocky Road ice cream?")
+  if(q2==='yes'){
+    alert("Yay! You got this right!");
+    correct = correct + 1;
+  }
+  else{
+    alert("Sorry, you got this wrong..")
+  }
+
+var q3 = prompt('Is starbucks my favorite coffee?')
+  if(q3==='no'){
+    alert("Thats correct!")
+    correct = correct + 1;
+  }
+  else{
+    alert('Oh no, you got this wrong.')
+  }
+
+  alert('You got ' + correct + ' right answers')
+
+</script>
+</body>
+
+</html>
