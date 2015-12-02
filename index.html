@@ -40,24 +40,20 @@ var q3 = prompt('Is starbucks my favorite coffee?');
     correct = correct + 1;
   }
   else{
-    alert('Oh' + user + ', you got this wrong. Starbucks is great coffee byt not my favorite.');
+    alert('Oh ' + user + ', you got this wrong. Starbucks is great coffee, but not my favorite.');
   }
 
 
 var age = prompt('How old am I?');
 var ageToNumber = parseInt(age);
-    if(ageToNumber===23){
-      alert('congratulations ' + user + ', you got this right!')
+    if(ageToNumber === 23){
+      alert('congratulations ' + user + ', you got this right!');
       correct = correct + 1;
-    }
-    else if(ageToNumber >= 24){
+    } else if(ageToNumber >= 24){
       alert('You guessed too high!');
-    }
-    else(ageToNumber <=22){
+    } else{
       alert('You guessed too low');
     }
-
-
   alert('You got ' + correct + ' right answers');
 
 </script>
