@@ -45,3 +45,19 @@ var ageToNumber = parseInt(age);
     alert('You guessed too low');
   }
 alert('You got ' + correct + ' right answers');
+
+//*while loops "what number am I thinking" question
+
+
+var number = prompt('What number am I thinking?');
+var i = 55;
+var msg = '';
+var thinkingNumber = parseInt(number);
+
+if (thinkingNumber === i){
+  alert('Congratulations' + user ", You guess the number I was thinking!")
+  while (i>55){
+
+
+  }
+}
