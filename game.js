@@ -70,7 +70,7 @@ alert('You got ' + correct + ' right answers');
 //*Multiple Choice question
 function cookieGame(){
 var cookies = ['chocolate chip', 'oatmeal', 'peanut butter', 'sugar',];
-var cookieQue = prompt('What is my favorite cookie?');
+var cookieQue = prompt('What is my favorite cookie?').toLowerCase();
 for(var i = 0; i<cookies.length; i++){
   if(cookies[i] === cookieQue){
     alert('Correct!');
