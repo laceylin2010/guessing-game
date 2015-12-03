@@ -44,20 +44,40 @@ var ageToNumber = parseInt(age);
   } else{
     alert('You guessed too low');
   }
-alert('You got ' + correct + ' right answers');
-
 //*while loops "what number am I thinking" question
 
+var number = 55
+var thinkingNumber = parseInt(prompt('What number am I thinking?'));
 
-var number = prompt('What number am I thinking?');
-var i = 55;
-var msg = '';
-var thinkingNumber = parseInt(number);
+  if (thinkingNumber === number){
+    alert('Congratulations ' + user +', you guessed right!');
+  }
+  while(thinkingNumber !== number){
+  if (thinkingNumber > number){
+  thinkingNumber = parseInt(prompt('Your guess is too high!'));
+} else {
+  thinkingNumber = parseInt(prompt('Your guess is too low'));
+}
 
-if (thinkingNumber === i){
-  alert('Congratulations' + user ", You guess the number I was thinking!")
-  while (i>55){
+}
+if (thinkingNumber === number){
+  alert('Congratulations ' + user + ', you guessed right!');
+}
+
+alert('You got ' + correct + ' right answers');
 
 
+//*Multiple Choice question
+function cookieGame(){
+var cookies = ['chocolate chip', 'oatmeal', 'peanut butter', 'sugar',];
+var cookieQue = prompt('What is my favorite cookie?');
+for(var i = 0; i<cookies.length; i++){
+  if(cookies[i] === cookieQue){
+    alert('Correct!');
+    correct = correct + 1;
+    return;
   }
 }
+  alert('Wrong');
+}
+cookieGame();
