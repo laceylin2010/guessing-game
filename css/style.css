@@ -1,0 +1,43 @@
+
+/* SELECTORS */
+body{
+  background-color; white;
+}
+h2{
+  color: maroon;
+}
+* {
+  property: value;
+}
+
+}
+h1 {
+   color: maroon;
+ }
+
+p, li {
+  color: grey;
+}
+
+ul > li {
+  color: grey;
+}
+
+#id {property: value;}
+
+.one{
+  color: blue;}
+
+a:link {property: value;}
+
+a:visited {property: value;}
+
+button:hover {property: value;}
+
+.right{
+  color: #4BFF47;
+}
+
+.wrong {
+  color: #FF0000;
+}
