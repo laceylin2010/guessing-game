@@ -1,0 +1,31 @@
+
+/* SELECTORS */
+* {
+  property: value;
+}
+
+h1 {
+   color: maroon;
+ }
+
+p, li {property: value;}
+
+ul > li {property: value;}
+
+#id {property: value;}
+
+.class {property: value;}
+
+a:link {property: value;}
+
+a:visited {property: value;}
+
+button:hover {property: value;}
+
+.right {
+  color: blue;
+}
+
+.wrong {
+  color: red;
+}

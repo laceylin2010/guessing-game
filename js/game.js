@@ -12,7 +12,7 @@ var three = document.getElementById('three');
 function ques1(){
 var ans1 = prompt('Is my favore color green?');
 if (ans1.toLowerCase() === 'n' || ans1.toUpperCase() === 'NO'){
-  one.textContent = 'You got this right! Green is my second favorite color.';
+  one.textContent = 'You got this right! Green is my second favorite color.'.right;
 }else if(ans1.toLowerCase() === 'y' || ans1.toLowerCase() === ('YES')){
   one.textContent = 'No, my favorite color is blue.'
 } else {
