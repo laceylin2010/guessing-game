@@ -17,7 +17,7 @@ function ques1(){
     one.textContent = 'No, my favorite color is blue.';
     one.className = 'wrong';
   } else {
-  alert('Please provide a yes or no answer.');
+    one.className = 'Please provide a yes or no answer.';
 
   }
 }
@@ -31,11 +31,11 @@ function ques2(){
     two.className = 'right';
     two.textContent = 'Thats correct! Rocky road ice cream is one of my favorites.';
     correct = correct+1;;
-  }else if (ans2.toLowerCase() === 'n' || ans3.toUpperCase() === 'NO'){
+  }else if (ans2.toLowerCase() === 'n' || ans2.toUpperCase() === 'NO'){
     two.className = 'wrong';
     two.textContent = 'What! No, I love rocky road!';
   } else{
-    alert('Please enter a yes or no answer');
+    two.className= 'Please enter a yes or no answer';
 
   }
 }
@@ -54,7 +54,7 @@ function ques3(){
     three.className = 'wrong';
     three.textContent = 'Oh ' + user + ', you got this wrong. Starbucks is great coffee, but not my favorite.';
   } else{
-      alert('Please enter a yes or no answer');
+    three.className = 'Please enter a yes or no answer';
 
   }
 }
@@ -73,7 +73,7 @@ function ques4(){
       four.className = 'wrong';
       four.textContent = 'You guessed too high!';
     } else{
-      alert('You guessed too low');
+      four.className = 'You guessed too low';
 
     }
   }
@@ -119,10 +119,13 @@ function cookieGame(){
       six.textContent = 'Correct!';
       correct = correct+1;
       return;
-
+    }
+    else{
+      six.className= 'wrong';
+      six.textContent = 'Sorry ' + user + ', thats incorrect.'
     }
   }
-    alert('Wrong');
+      siz.textContent = 'Wrong';
   }
   cookieGame();
 
