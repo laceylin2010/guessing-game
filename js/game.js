@@ -125,7 +125,6 @@ function cookieGame(){
       six.textContent = 'Sorry ' + user + ', thats incorrect.'
     }
   }
-      siz.textContent = 'Wrong';
   }
   cookieGame();
 
